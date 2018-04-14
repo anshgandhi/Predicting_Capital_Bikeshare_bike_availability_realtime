@@ -78,3 +78,9 @@ with tf.Session() as sess:
     pickle.dump(sess.run(biases["b1"]),open("/home/anshgandhi16/data/weights/b1.p", "wb"))
     pickle.dump(sess.run(biases["b2"]),open("/home/anshgandhi16/data/weights/b2.p", "wb"))
     pickle.dump(sess.run(biases["out"]),open("/home/anshgandhi16/data/weights/bout.p", "wb"))
+
+
+from sklearn.ensemble import RandomForestRegressor
+rf = RandomForestRegressor()
+rf.fit(X,Y)
+pickle.dump(rf,open("/home/anshgandhi16/data/weights/rf.p", "wb"))
