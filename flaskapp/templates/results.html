@@ -1,15 +1,8 @@
-<html>
-  <head>
-	  {{ js_resources|indent(4)|safe }}
-    {{ css_resources|indent(4)|safe }}
-	{{the_script|safe}}
-  </head>
-  <body>
 <h1> Predicting Capital Bikeshare bike availability at stations </h1>
-
 <form method="POST" action="/send">
 Date : 
 <input type="date" name="date_time">
+
 Hour :
 <select name="hour">
     {% for hour in hours %}
@@ -26,15 +19,11 @@ Minute :
 
 Station :
 <select name="station">
-    {% for station_name,station_id in stations %}
+    {% for station_name,station_id,_ in stations %}
         <option value="{{station_id}}" SELECTED>{{station_name}}</option>"
     {% endfor %}
 </select>
+
+
 <input type="submit" value="Submit">
 </form>
-
-<div style="width:9000px;height:300px;border:1px;">
-    {{ the_div|safe }}
-</div>
-  </body>
-</html>

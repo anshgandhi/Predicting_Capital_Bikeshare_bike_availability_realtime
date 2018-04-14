@@ -72,9 +72,9 @@ with tf.Session() as sess:
                                 x: batch_x, 
                                 y: batch_y
                             })
-    pickle.dump(sess.run(weights["h1"]),open("./weights/h1.p", "wb"))
-    pickle.dump(sess.run(weights["h2"]),open("./weights/h2.p", "wb"))
-    pickle.dump(sess.run(weights["out"]),open("./weights/hout.p", "wb"))
-    pickle.dump(sess.run(biases["b1"]),open("./weights/b1.p", "wb"))
-    pickle.dump(sess.run(biases["b2"]),open("./weights/b2.p", "wb"))
-    pickle.dump(sess.run(biases["out"]),open("./weights/bout.p", "wb"))
+    pickle.dump(sess.run(weights["h1"]),open("/home/anshgandhi16/data/weights/h1.p", "wb"))
+    pickle.dump(sess.run(weights["h2"]),open("/home/anshgandhi16/data/weights/h2.p", "wb"))
+    pickle.dump(sess.run(weights["out"]),open("/home/anshgandhi16/data/weights/hout.p", "wb"))
+    pickle.dump(sess.run(biases["b1"]),open("/home/anshgandhi16/data/weights/b1.p", "wb"))
+    pickle.dump(sess.run(biases["b2"]),open("/home/anshgandhi16/data/weights/b2.p", "wb"))
+    pickle.dump(sess.run(biases["out"]),open("/home/anshgandhi16/data/weights/bout.p", "wb"))
