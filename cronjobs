@@ -1,0 +1,2 @@
+*/5 * * * * /home/anshgandhi16/miniconda3/bin/python /home/anshgandhi16/station_status.py
+0 * * * * /home/anshgandhi16/miniconda3/bin/python /home/anshgandhi16/data/train_model.py >> /home/anshgandhi16/data/train_model.log
