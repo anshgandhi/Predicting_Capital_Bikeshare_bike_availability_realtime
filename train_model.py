@@ -6,7 +6,7 @@ ops.reset_default_graph()
 
 import MySQLdb
 import pandas as pd
-db=MySQLdb.connect(host="35.226.98.33",user="ansh",passwd="pass@123",db="stations_data")
+db=MySQLdb.connect(host="35.226.98.33",user="ansh",passwd="",db="stations_data")
 cursor = db.cursor()
 query = "SELECT * FROM agg"
 cursor.execute(query)

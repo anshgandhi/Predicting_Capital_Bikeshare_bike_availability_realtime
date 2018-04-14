@@ -80,7 +80,11 @@ def send():
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
         pred = sess.run([out_layer], feed_dict={x: X})
-    pred = np.round((pred[0][0][0]))
+    pred_1 = np.round((pred[0][0][0]))
+    
+    
+    from sklearn.ensemble import RandomForestRegressor
+    
     
     return "<br>".join(["Predicted Number of Bikes are: "+"{:.0f}".format(np.round((pred))),"Capacity at Station: "+str(cap)])
     

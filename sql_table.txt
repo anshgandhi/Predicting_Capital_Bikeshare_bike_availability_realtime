@@ -1,0 +1,11 @@
+create table agg(
+   month INT NOT NULL,
+   date INT NOT NULL,
+   hour INT NOT NULL,
+   min INT NOT NULL,
+   station_code INT NOT NULL,
+   capacity INT NOT NULL,
+   docks INT NOT NULL,
+   bikes INT NOT NULL
+);
+
