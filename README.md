@@ -16,4 +16,6 @@ A Flask application is then deployed to read user input (Date, time, Location of
 
 The application is deployed on Google Cloud Platform and for security purposes the application has been set to be accessible from within The George Washington University ip address ranges only.
 
+Link : 35.196.136.99:5000 [http://35.196.136.99:5000/]
+
 anshgandhi16@gmail.com
